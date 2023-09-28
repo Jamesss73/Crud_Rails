@@ -1,0 +1,160 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ /* styles.css */
+ 
+
+ /* css para el index*/
+ body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f0f0f0;
+ }
+ h1 {
+   background-color: #007bff;
+   color: #fff;
+   padding: 20px;
+   text-align: center;
+ }
+ .container {
+   max-width: 800px;
+   margin: 20px auto;
+   background-color: #fff;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   padding: 20px;
+ }
+ table {
+   width: 100%;
+   border-collapse: collapse;
+ }
+ th, td {
+   border: 1px solid #ddd;
+   padding: 8px;
+   text-align: left;
+ }
+ th {
+   background-color: #007bff;
+   color: #fff;
+ }
+ tr:nth-child(even) {
+   background-color: #f2f2f2;
+ }
+ .actions {
+   text-align: center;
+ }
+ .actions a {
+   margin: 5px;
+   padding: 5px 10px;
+   text-decoration: none;
+   background-color: #007bff;
+   color: #fff;
+   border-radius: 5px;
+ }
+ .actions a.delete {
+   background-color: #ff5555;
+ }
+
+ /* Estilo para las etiquetas de formulario de edit  */
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+ }
+ 
+ .input-field {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+ }
+ 
+ .input-field:focus {
+    border-color: #007bff; 
+    outline: none;
+ }
+ 
+ .submit-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+ }
+ 
+ .submit-button:hover {
+    background-color: #0056b3; 
+ }
+ /* Estilo para el contenedor del formulario de crear producto*/
+.form-container {
+    max-width: 400px; 
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+  
+.product-form {
+    max-width: 400px; 
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+ }
+ 
+ .label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+ }
+ 
+ .input-field {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+ }
+ 
+ .input-field:focus {
+    border-color: #007bff; 
+    outline: none;
+ }
+ 
+ .submit-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+ }
+ 
+ .submit-button:hover {
+    background-color: #0056b3; 
+ }
+ 
