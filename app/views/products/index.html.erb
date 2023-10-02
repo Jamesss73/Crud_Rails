@@ -7,7 +7,9 @@
 <body>
   <h1>Listado de Productos</h1>
   <div class="container">
-    <%= link_to "Crear Producto", new_product_path, class: "actions" %>
+    <td class="actions">
+       <%= link_to "Crear Producto", new_product_path, class: "create" %>
+    </td>
     <table>
       <thead>
         <tr>

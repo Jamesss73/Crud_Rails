@@ -16,25 +16,39 @@
 
  /* styles.css */
  
+ /* Colores */
+ :root {
+  --color_principal: #007bff;
+  --color_secundario: #00bbff;
+  --color_blanco: #ffffff;
+  --color_negro: #333333 ;
+  --color_rojo: #ff5555 ;
+  --color_verde: #3affb7 ;
+  --color_1: #d5e6ec ;
+  --color_2: #d5e6ec ;
+  --color_3: #d5e6ec ;
+}
+
 
  /* css para el index*/
+
  body {
    font-family: Arial, sans-serif;
    margin: 0;
    padding: 0;
-   background-color: #f0f0f0;
+   background-color: var(--color_blanco);
  }
  h1 {
-   background-color: #007bff;
-   color: #fff;
+   background-color: var(--color_principal);
+   color: var(--color_blanco);
    padding: 20px;
    text-align: center;
  }
  .container {
    max-width: 800px;
    margin: 20px auto;
-   background-color: #fff;
-   border: 1px solid #ddd;
+   background-color: var(--color_blanco);
+   border: 1px solid var(--color_blanco);
    border-radius: 5px;
    padding: 20px;
  }
@@ -43,16 +57,16 @@
    border-collapse: collapse;
  }
  th, td {
-   border: 1px solid #ddd;
+   border: 1px solid var(--color_blanco);
    padding: 8px;
    text-align: left;
  }
  th {
-   background-color: #007bff;
-   color: #fff;
+   background-color:var(--color_principal);
+   color: var(--color_blanco);
  }
  tr:nth-child(even) {
-   background-color: #f2f2f2;
+   background-color: var(--color_blanco);
  }
  .actions {
    text-align: center;
@@ -61,12 +75,15 @@
    margin: 5px;
    padding: 5px 10px;
    text-decoration: none;
-   background-color: #007bff;
-   color: #fff;
+   background-color:var(--color_secundario);
+   color:var(--color_blanco);
    border-radius: 5px;
  }
  .actions a.delete {
-   background-color: #ff5555;
+   background-color:var(--color_rojo);
+ }
+ .actions.create {
+  background-color:var(--color_verde);
  }
 
  /* Estilo para las etiquetas de formulario de edit  */
@@ -80,19 +97,19 @@
     width: 100%;
     padding: 8px;
     margin-bottom: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--color_blanco);
     border-radius: 5px;
     transition: border-color 0.3s;
  }
  
  .input-field:focus {
-    border-color: #007bff; 
+    border-color:var(--color_principal); 
     outline: none;
  }
  
  .submit-button {
-    background-color: #007bff;
-    color: #fff;
+    background-color:var(--color_principal);
+    color:var(--color_blanco);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -101,27 +118,27 @@
  }
  
  .submit-button:hover {
-    background-color: #0056b3; 
+    background-color:var(--color_principal); 
  }
  /* Estilo para el contenedor del formulario de crear producto*/
 .form-container {
     max-width: 400px; 
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: var(--color_blanco);
+    border: 1px solid var(--color_blanco);
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 0 10px var(--color_negro); 
   }
   
 .product-form {
     max-width: 400px; 
     margin: 0 auto; 
     padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color:var(--color_blanco);
+    border: 1px solid var(--color_blanco);
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 0 10px var(--color_negro); 
  }
  
  .label {
@@ -134,19 +151,19 @@
     width: 100%;
     padding: 8px;
     margin-bottom: 15px;
-    border: 1px solid #ddd;
+    border: 1px solidvar(--color_blanco);
     border-radius: 5px;
     transition: border-color 0.3s;
  }
  
  .input-field:focus {
-    border-color: #007bff; 
+    border-color:var(--color_principal); 
     outline: none;
  }
  
  .submit-button {
-    background-color: #007bff;
-    color: #fff;
+    background-color:var(--color_principal);
+    color:var(--color_blanco);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -155,6 +172,6 @@
  }
  
  .submit-button:hover {
-    background-color: #0056b3; 
+    background-color: var(--color_principal); 
  }
  
