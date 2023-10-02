@@ -29,7 +29,7 @@ class ProductsController < ApplicationController
       end
   end
 
-  def show  ###  es el metodo Delete pero por alguna razon  no logro que se use correctamente  
+  def show  ###  es el metodo Delete pero por alguna razon  no logro que se use correctamente
     product = Product.find(params[:id])
     product.destroy
     redirect_to products_path, notice: "Producto eliminado correctamente"
