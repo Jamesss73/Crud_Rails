@@ -4,6 +4,8 @@ import "controllers"
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+
+//NO funciona la parte de la notificacion pora cuando se elimina y se edita el elemento
 document.addEventListener('DOMContentLoaded', function() {
     const urlParams = new URLSearchParams(window.location.search);
     const deleted = urlParams.get('deleted');
