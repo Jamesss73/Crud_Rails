@@ -1,6 +1,11 @@
 class ProductsController < ApplicationController
   def index
     @products = Product.all
+
+    respond_to do |format|
+      format.html  # Esta línea indica que responde a formato HTML
+      format.json { render json: @products }
+    end
   end
 
   def new
@@ -32,7 +37,7 @@ class ProductsController < ApplicationController
   def show  ###  es el metodo Delete pero por alguna razon  no logro que se use correctamente
     product = Product.find(params[:id])
     product.destroy
-    redirect_to products_path, notice: "Producto eliminado correctamente"
+    redirect_to products_path, notice: "Producto eliminado correctamente", deleted: true
   end
 
   def delete

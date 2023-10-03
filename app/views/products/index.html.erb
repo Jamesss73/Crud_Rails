@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Listado de Productos</title>
+  <script src="https://cdn.jsdelivr.net/npm/toastify@1.11.0/dist/toastify.min.js"></script>
 
+  <title>Listado de Productos</title>
 </head>
 <body>
-  <h1>Listado de Productos</h1>
   <div class="container">
-    <td class="actions">
-       <%= link_to "Crear Producto", new_product_path, class: "create" %>
-    </td>
+    <h1>Listado de Productos</h1>
+    <div class="actionsC">
+      <%= link_to "Crear Producto", new_product_path, class: "create" %>
+    </div>
     <table>
       <thead>
         <tr>
@@ -34,5 +35,6 @@
       </tbody>
     </table>
   </div>
+  <div id="toast-container" class="toast-container"></div>
 </body>
 </html>
