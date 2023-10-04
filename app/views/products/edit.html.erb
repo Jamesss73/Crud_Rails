@@ -1,11 +1,12 @@
 <div class="form-container">
+<h2>Datos del producto</h2>
   <%= form_for @product, html: { class: "product-form" } do |f| %>
       <div class="form-group">
-    <%= f.label :Nombtr, class: "label" %>
+    <%= f.label :Nombre, class: "label" %>
     <%= f.text_field :name, class: "input-field" %>
   </div>
   <div class="form-group">
-    <%= f.label :Descripcion, class: "label" %>
+    <%= f.label :Descripcíon, class: "label" %>
     <%= f.text_area :description, class: "input-field" %>
   </div>
   <div class="form-group">
@@ -13,7 +14,9 @@
     <%= f.number_field :price, class: "input-field" %>
   </div>
   <div class="form-actions">
-<%= f.submit "Guardar", class: "submit-button" %>
+    <%= f.submit "Editar", class: "submit-button" %>
+    <%= link_to "Cancelar", products_path, class: "cancel-button" %>
+
   </div>
   <% end %>
 </div>

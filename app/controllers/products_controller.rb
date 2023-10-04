@@ -12,6 +12,10 @@ class ProductsController < ApplicationController
     @product = Product.new
   end
 
+  def back
+    redirect_to products_path
+  end
+
   def create
     @product = Product.new(product_params)
       if @product.save

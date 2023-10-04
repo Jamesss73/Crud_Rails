@@ -1,3 +1,5 @@
+<div class="form-container">
+<h2>Datos del producto</h2>
 <%= form_for @product, html: { class: "product-form" } do |f| %>
   <div class="form-group">
     <%= f.label :Nombre, class: "label" %>
@@ -13,5 +15,8 @@
   </div>
   <div class="form-actions">
     <%= f.submit "Guardar", class: "submit-button" %>
+    <%= link_to "Cancelar", products_path, class: "cancel-button" %>
   </div>
 <% end %>
+
+</div>
