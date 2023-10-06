@@ -5,10 +5,12 @@
 </head>
 <body>
   <div class="container">
-    <h1>Listado de Productos</h1>
+    <h1>
+      <%= image_tag('rails.png', alt: 'Logo de Rails', width: '100', height: '100') %>
+      Listado de Productos
+    </h1>
     <div class="actionsC">
-      <%= link_to "Crear Producto", new_product_path, class: "create" %> <!-- (ERB - Embedded Ruby)  -->
-
+      <%= link_to "Crear Producto", new_product_path, class: "create" %>
     </div>
     <table>
       <thead>
