@@ -18,7 +18,7 @@
 
 /* Colores */
 :root {
-  --color_principal: #007bff;
+  --color_principal: #286eb9;
   --color_secundario: #2bc4fc;
   --color_blanco: #ffffff;
   --color_negro: #333333;
@@ -61,6 +61,7 @@ h2 {
   border: 1px solid var(--color_1);
   border-radius: 5px;
   padding: 20px;
+  box-shadow: 0 0 10px rgb(16, 54, 136);
 }
 .containerh2 {
   max-width: 800px;
@@ -191,7 +192,7 @@ tr:nth-child(even) {
   background-color: var(--color_blanco);
   border: 1px solid var(--color_blanco);
   border-radius: 5px;
-  box-shadow: 0 0 10px var(--color_negro);
+  box-shadow: 0 0 10px rgb(16, 54, 136);
 }
 
 
@@ -203,7 +204,7 @@ tr:nth-child(even) {
   background-color: var(--color_blanco);
   border: 1px solid var(--color_blanco);
   border-radius: 5px;
-  box-shadow: 0 0 10px var(--color_negro);
+  box-shadow: 0 0 10px rgb(16, 54, 136);
 }
 
 .form-actions{

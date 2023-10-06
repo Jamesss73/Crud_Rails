@@ -7,7 +7,8 @@
   <div class="container">
     <h1>Listado de Productos</h1>
     <div class="actionsC">
-      <%= link_to "Crear Producto", new_product_path, class: "create" %>
+      <%= link_to "Crear Producto", new_product_path, class: "create" %> <!-- (ERB - Embedded Ruby)  -->
+
     </div>
     <table>
       <thead>
@@ -33,7 +34,6 @@
       </tbody>
     </table>
   </div>
-  <!--NO funciona la parte de la notificacion pora cuando se elimina y se edita el elemento-->
   <div id="toast-container" class="toast-container"></div>
   <script src="https://cdn.jsdelivr.net/npm/toastify@1.11.0/dist/toastify.min.js"></script>
 </body>
