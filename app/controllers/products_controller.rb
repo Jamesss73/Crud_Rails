@@ -3,7 +3,7 @@ class ProductsController < ApplicationController
     @products = Product.all
 
     respond_to do |format|
-      format.html  # Esta línea indica que responde a formato HTML
+      format.html 
       format.json { render json: @products }
     end
   end
